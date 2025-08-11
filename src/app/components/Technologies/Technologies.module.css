@@ -1,0 +1,162 @@
+.section {
+  width: 100%;
+  max-width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.sectionDivider {
+  width: 5%;
+  height: 6px;
+  background: var(--color-accent);
+  margin: 32px auto;
+  border-radius: 10px;
+}
+
+.divider {
+  margin-bottom: 64px;
+  background-color: var(--accent1);
+}
+
+.colorAlt {
+  background: var(--button);
+}
+
+.sectionTitle {
+  font-weight: bold;
+  text-align: left;
+  margin-left: 2em;
+  font-size: 5rem;
+  color: var(--textColor);
+  margin-bottom: 16px;
+}
+
+.sectionText {
+  max-width: 550px;
+  margin-left: 6.5em;
+  text-align: left;
+  color: var(--textColor);
+  font-size: 1.7rem;
+  margin-bottom: 2em;
+}
+
+.list {
+  width: 100%;
+  padding: 0 3em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0em;
+  justify-items: center; 
+  align-items: center;
+}
+.listItem {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.listContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  border-radius: 10px;
+  background-color: var(--background2);
+  margin-bottom: 5em;
+}
+
+.listTitle {
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: var(--textColor);
+  margin-bottom: 8px;
+}
+
+.listParagraph {
+  font-size: 1.5rem;
+  line-height: 30px;
+  color: var(--textColor);
+}
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  .sectionTitle {
+    font-size: 3rem;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .sectionText {
+    margin-left: 0;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    margin: 3em 0;
+  }
+
+  .listItem {
+    max-width: 260px;
+  }
+
+  .listTitle {
+    font-size: 24px;
+  }
+
+  .listParagraph {
+    font-size: 16px;
+  }
+}
+
+/* Mobile (≤640px) */
+@media (max-width: 640px) {
+  .section {
+    padding: 40px 10px;
+  }
+
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+
+  .sectionText {
+    font-size: 1.1rem;
+    margin-bottom: -2em;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+  .listItem {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: -60px;
+  }
+
+  .listTitle {
+    font-size: 20px;
+  }
+
+  .listParagraph {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,65 @@
+/* ===== Light Mode (Default) ===== */
+[data-theme="light"] {
+  --background1: hsl(225, 39%, 12%);
+  --background2: hsl(220, 15%, 20%);
+  --textColor: hsl(210, 20%, 95%);
+  --accent1: hsl(40, 100%, 65%);
+  --button: hsl(205, 80%, 50%);
+  --headerFont: 'Mayfair Display', serif;
+  --bodyFont: 'Poppins', sans-serif;
+}
+
+/* ===== Dark Mode ===== */
+[data-theme="dark"] {
+  --background1: #1b1a1a;
+  --background2: hsl(220, 15%, 20%);
+  --textColor: hsl(210, 20%, 95%);
+  --accent1: hsl(34, 100%, 50%);
+  --button: hsl(205, 90%, 40%);
+  --headerFont: 'Mayfair Display', serif;
+  --bodyFont: 'Poppins', sans-serif;
+}
+
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-size: 1.6rem;
+  background: var(--background1);
+  color: var(--textColor);
+  font-family: var(--bodyFont);
+  letter-spacing: 0.5px;
+  cursor: default;
+}
+
+/* ===== Typography ===== */
+h1, h2, h3, h4, h5, h6, button {
+  font-family: var(--headerFont);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+p {
+  font-family: var(--bodyFont);
+  line-height: 1.6;
+}
+
+/* ===== Links & Lists ===== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}

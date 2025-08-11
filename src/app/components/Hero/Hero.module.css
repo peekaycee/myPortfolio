@@ -1,0 +1,108 @@
+.section {
+  width: 100%;
+  height: auto;
+  padding: 0 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 5em;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.leftSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+  color: var(--textColor);
+}
+
+.leftSection .sectionTitle {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.leftSection .sectionText {
+  width: 80%;
+  font-size: 2rem;
+  font-weight: 300;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+.rightSection {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionDivider {
+  width: 5%;
+  height: 6px;
+  background: var(--color-accent, #4f6cb0);
+  margin: 32px auto;
+  border-radius: 10px;
+}
+
+.divider {
+  margin-bottom: 64px;
+}
+
+.colorAlt {
+  background: var(--button);
+}
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  .section {
+    flex-direction: column;
+    padding: 2em;
+    gap: 1.5em;
+  }
+
+  .leftSection,
+  .rightSection {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .leftSection .sectionTitle {
+    font-size: 3rem;
+  }
+
+  .leftSection .sectionText {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile (≤640px) */
+@media (max-width: 640px) {
+  .section {
+    padding: 1em;
+  }
+
+  .rightSection {
+    display: none;
+  }
+
+  .leftSection {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .leftSection .sectionTitle {
+    font-size: 2.5rem;
+  }
+
+  .leftSection .sectionText {
+    font-size: 1.2rem;
+  }
+}

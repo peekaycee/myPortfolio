@@ -1,0 +1,21 @@
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 1.2rem 1.2em;
+  background:  var(--button);
+  border-radius: 10px;
+  margin-top: 1em;
+  color: var(--textColor);
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: var(--bodyText);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease; 
+}
+.button:hover{
+  background-color: var(--background2);
+  color: var(--accent1);
+}

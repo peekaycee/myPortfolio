@@ -1,0 +1,6 @@
+.container {
+  width: 100%;
+}
+.headerText{
+  color: var(--textColor);
+}

@@ -16,6 +16,11 @@
   row-gap: 5rem;
 }
 
+.cardInfo{
+  letter-spacing: 0;
+}
+
+
 @media (max-width: 640px) {
   .gridContainer {
     display: flex;
@@ -79,7 +84,6 @@
   color: var(--textColor);
   font-size: 1.5rem;
   line-height: 24px;
-  letter-spacing: 1px;
   text-align: justify;
   margin-bottom: 1.2em;
 }

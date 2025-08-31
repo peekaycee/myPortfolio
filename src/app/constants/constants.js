@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'HNC Real-Estate',
-    description: "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
+    description: "This is a real estate website for HNC Properties. In this platform, you can explore, buy, and rent premium homes, apartments, and commercial spaces with ease.",
     image: '/images/1.png',
     tags: ['Mongo', 'Express', 'React', 'Node'],
     source: 'https://github.com/peekaycee/homes.n.codes',
@@ -10,7 +10,7 @@ export const projects = [
   },
   {
     title: 'HEMA Website',
-    description:"This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
+    description:"This is a church website for HEMA. On this website, you can connect with our ministry, join worship services, access inspiring sermons, and grow spiritually.",
     image: '/images/2.jpg',
     tags: ['React', 'JavaScript'],
     source: 'https://github.com/peekaycee/Hem-website',
@@ -19,7 +19,7 @@ export const projects = [
   },
   {
     title: 'EventSphere',
-    description: "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
+    description: "This is an event booking website for EventSphere. On this platform, you can discover, book, and manage tickets for concerts, conferences, weddings, and social events.",
     image: '/images/3.png',
     tags: ['React', 'WebRTC'],
     source: 'https://github.com/peekaycee/event-details-website',
@@ -27,8 +27,8 @@ export const projects = [
     id: 2,
   },
   {
-    title: 'Coded Bar',
-    description: "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application that functions well and completes tasks.",
+    title: 'BF Smoothies',
+    description: "This is a smoothies outlet website for Coded Bar. On this platform, you can explore healthy smoothies, order fresh blends online, and enjoy nutritious drinks delivered.",
     image: '/images/4.jpg',
     tags: ['React', 'ChatEngine', 'Firebase'],
     source: 'https://github.com/peekaycee/Coded-Bar',
@@ -37,7 +37,7 @@ export const projects = [
   },
   {
     title: 'Barb Shoe Store',
-    description: "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application that functions well and completes tasks.",
+    description: "This is a shoe e-commerce website for Barb Shoe Store. On this platform, you can shop stylish footwear, browse trendy collections, and buy quality shoes online with ease.",
     image: '/images/5.png',
     tags: ['React', 'ChatEngine', 'Firebase'],
     source: 'https://github.com/peekaycee/barb-shoe-store',
@@ -46,7 +46,7 @@ export const projects = [
   },
   {
     title: 'Campus Navigate',
-    description: "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application that functions well and completes tasks.",
+    description: "This is a campus navigation website called Campus Navigate. In this web-app, you can explore UNILAG routes, find buildings, optimize paths, and query data using GraphQL.",
     image: '/images/6.png',
     tags: ['React', 'ChatEngine', 'Firebase'],
     source: 'https://github.com/peekaycee/campus-navigate',

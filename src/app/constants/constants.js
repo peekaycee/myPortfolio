@@ -28,7 +28,7 @@ export const projects = [
   },
   {
     title: 'BF Smoothies',
-    description: "This is a smoothies outlet website for Coded Bar. On this platform, you can explore healthy smoothies, order fresh blends online, and enjoy nutritious drinks delivered.",
+    description: "This is a smoothies outlet website for Beyond Fabs Smoothies. On this platform, you can explore healthy smoothies, order fresh blends online, and enjoy nutritious drinks delivered.",
     image: '/images/4.jpg',
     tags: ['React', 'ChatEngine', 'Firebase'],
     source: 'https://github.com/peekaycee/Coded-Bar',

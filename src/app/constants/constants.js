@@ -27,12 +27,12 @@ export const projects = [
     id: 2,
   },
   {
-    title: 'Coded Bar',
-    description: "This is a drinks, perfait and smoothies outlet website for Coded Bar. This website allows you explore their healthy smoothies products, order fresh blends online, and enjoy nutritious drinks delivered.",
+    title: 'BF Smoothies',
+    description: "This is a smoothies, parfait and drinks outlet website for Beyond Fabs Smoothies. This website allows you explore their healthy smoothies products, order fresh blends online, and enjoy nutritious drinks delivered.",
     image: '/images/4.jpg',
     tags: ['HTML5', 'CSS3', 'JavaScript'],
-    source: 'https://github.com/peekaycee/Coded-Bar',
-    visit: 'https://codedbar.netlify.app/',
+    source: 'https://github.com/peekaycee/beyondFabSmoothies',
+    visit: 'https://beyondfabsmoothies.netlify.app/',
     id: 3,
   },
   {

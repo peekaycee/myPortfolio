@@ -1,0 +1,152 @@
+/* components/Header/header.module.css */
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2rem;
+  padding: 1.5em 7rem;
+  background-color: transparent;
+}
+
+@media (max-width: 640px) {
+  .container {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 60px);
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    padding: 0.5rem;
+  }
+}
+.logo span {
+  font-size: 3rem;
+  font-family: var(--headerText);
+}
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+}
+
+@media (max-width: 640px) {
+  .div1 {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+}
+
+.div2 {
+  grid-area: 1 / 2 / 2 / 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+  .div2 a{
+    margin: 0 1.2em;
+    font-size: 2rem;
+    color: var(--textColor);
+  }
+@media (max-width: 640px) {
+  .div2 {
+    display: none;
+  }
+}
+
+.div3 {
+  grid-area: 1 / 5 / 2 / 6;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.div3 a:last-child {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .div3 {
+    justify-content: flex-end;
+  }
+
+  .div3 a:last-child {
+    display: block;
+  }
+}
+
+.navLink {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--textColor);
+  display: flex;
+  gap: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.navLink li a {
+  color: var(--textColor);
+  font-family: var(--bodyText);
+}
+
+.navLink li a:hover {
+  color: var(--accent1);
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .navLink {
+    padding: 0.5rem;
+  }
+}
+
+.socialIcons {
+  transition: 0.3s ease;
+  color: var(--textColor);
+  border-radius: 50%;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+}
+
+.socialIcons:hover {
+  background-color: var(--background2);
+  transform: scale(1.15);
+  color: var(--accent1);
+  cursor: pointer;
+}
+
+.dropDown {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .dropDown {
+    display: block;
+  }
+  .logo span{
+    font-size: 1.7rem;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  color: var(--accent1);
+  font-size: 1.5rem;
+}
+.themeToggle {
+  background: transparent;
+  border: none;
+  color: var(--textColor);
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.themeToggle:hover {
+  color: var(--accent1);
+}

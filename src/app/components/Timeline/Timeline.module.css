@@ -1,0 +1,201 @@
+.timelineSection {
+  padding: 3rem 1rem;
+  background: var(--bg-dark);
+  color: var(--color-light);
+  overflow: hidden; /* Prevents accidental horizontal overflow */
+}
+
+.sectionTitle {
+  margin-left: 2em;
+  font-family: var(--headerText);
+  font-weight: bold;
+  font-size: 5rem;
+  color: var(--textColor);
+  margin-bottom: 10px;
+}
+
+.sectionText {
+  font-family: var(--bodyText);
+  font-size: 1.7rem;
+  color: var(--textColor);
+  padding: 0 0 0 6.25em;
+  width: 75%;
+  text-align: justify;
+  margin-bottom: 2em; 
+}
+
+.carouselWrapper {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 0 10px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  background: var(--background2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 10px;
+  flex: 1 1;
+  min-width: 220px;
+  max-width: 220px;
+  height: auto;
+  padding: 2rem;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.year {
+  font-family: var(--headerText);
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--textColor);
+  margin-bottom: 3px;
+}
+
+.text {
+  font-family: var(--bodyText);
+  font-size: 1.2rem;
+  color: var(--textColor);
+}
+
+.navButton {
+  background: var(--button);
+  color: var(--color-light);
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.navButton:hover {
+  background: var(--background2);
+}
+
+.leftButton {
+  position: absolute;
+  left: -15px;
+}
+
+.rightButton {
+  position: absolute;
+  right: -15px;
+}
+
+/* Desktop - All items visible, no buttons */
+@media (min-width: 1025px) {
+  .carousel {
+    overflow-x: hidden;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .navButton {
+    display: none;
+  }
+}
+
+/* Tablet - Enable scrolling + buttons */
+@media (max-width: 1024px) and (min-width: 641px) {
+  .sectionTitle {
+    text-align: center;
+    margin: 0;
+  }
+  .sectionText {
+    width: 92%;
+    padding: 0 1em;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  .carouselWrapper {
+    padding: 0 2em; 
+  }
+  .carousel {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding: 0 10px; 
+  }
+  .card {
+    min-width: 250px; 
+    max-width: 250px;
+    flex: 0 0 auto;
+  }
+  .navButton {
+    display: block;
+  }
+}
+
+/* Mobile - Single/Small scroll cards */
+@media (max-width: 640px) {
+  .sectionTitle {
+    text-align: center;
+    margin: 0;
+  }
+  .sectionText {
+    width: 100%;
+    padding: 0 1em;
+  }
+  .carouselWrapper {
+    padding: 0 1em; 
+  }
+  .carousel {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding: 0 10px;
+  }
+  .card {
+    min-width: 85%;
+    max-width: 85%;
+    flex: 0 0 auto;
+  }
+  .navButton {
+    display: block;
+  }
+}
+
+.sectionDivider {
+  width: 5%;
+  height: 6px;
+  background: var(--color-accent);
+  margin: 32px auto;
+  border-radius: 10px;
+}
+
+.divider {
+  margin-bottom: 64px;
+  background-color: var(--accent1);
+}
+
+@media (max-width: 960px){
+  .sectionTitle{
+    font-size: 3rem;
+    text-align: center;
+    margin: 0.5em 0;
+  }
+}

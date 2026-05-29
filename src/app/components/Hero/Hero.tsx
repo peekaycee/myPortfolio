@@ -18,7 +18,7 @@ const Hero = () => {
           <p className={styles.sectionText}>
             I design and develop aesthetically beautiful and responsive software applications with prowess and dexterity.
           </p>
-          <a href="/cv/KALU-KALU-RESUME-LATEST-FendEng.pdf" download>
+          <a href="/cv/Kalu_Kalu_Okomba_FE_Resume.pdf" download>
             <Button>
               Download Resume
             </Button>         

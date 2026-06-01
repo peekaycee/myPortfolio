@@ -21,7 +21,7 @@ export const projects = [
     title: 'MathMentor',
     description: "This is a math tutoring website for MathMentor. In this platform, you can consult the math-mentor, register and apply for math tutoring sessions.",
     image: '/images/MathMentor.png',
-    tags: ['React', 'NextJs'],
+    tags: ['React', 'NextJs', 'v0-vercel'],
     source: 'https://github.com/peekaycee/math-tutoring-website',
     visit: 'https://v0-next-js-tutoring-website-sooty.vercel.app/',
     id: 2,

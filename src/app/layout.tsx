@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import './globals.css';
-import styles from './homepage.module.css'
+import "./globals.css";
+import styles from './homepage.module.css';
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {;
   return (
-    <html lang="en">
-      <body className={styles.container}>
+    <html lang="en"  suppressHydrationWarning={true}>
+      <body className={styles.container} suppressHydrationWarning={true}>
         <Header />
         {children}  
         <Footer />     

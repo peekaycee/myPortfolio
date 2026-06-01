@@ -33,7 +33,7 @@ const Projects = () => {
             <p className={styles.cardInfo}>{p.description}</p>
 
             {/* Uncomment if you want tags */}
-            {/* 
+            
             <div>
               <div className={styles.titleContent}>Stack</div>
               <ul className={styles.tagList}>
@@ -42,7 +42,7 @@ const Projects = () => {
                 ))}
               </ul>
             </div> 
-            */}
+           
 
             <ul className={styles.utilityList}>
               <li>

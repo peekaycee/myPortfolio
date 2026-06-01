@@ -213,9 +213,9 @@
 }
 
 @media (max-width: 640px) {
-  .arrow {
+  /* .arrow {
     display: none;
-  }
+  } */
   .slogan{
     text-align: center;
   }
